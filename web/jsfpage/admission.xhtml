@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+        <link href="cssStylePage/bodypage.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+        
+         <ui:include src="headerPage.xhtml"/> 
+
+
+        
+        
+        <div style="width: 1088px; height:1480px; margin: 0 auto; background: #E1DDD9;">  
+            <div class="bodypanel_tf">
+            <div class="mainBody_Panel_tf">
+                <div class="mb__Panel_tf">
+                    <div class="mb_h_tf">
+                        <b>ONLINE ADMISSION</b>
+                    </div>
+                    <div class="mb_b_tf">
+                        <div style="   margin:0 auto; width: 740px; height: 45px; padding-top: 5px; border: 1px solid  #cccccc;    margin-top: 15px; border-radius:5px 5px 5px ; text-align: center">
+                            <span style=" font-size:20px; font-family: fantasy; color: #999999;  ">online admission</span>
+                        </div>
+                        <div style="   margin:0 auto; width: 740px; height: 60px; padding-top: 15px; border: 1px solid  #cccccc;    margin-top: 15px; border-radius:5px 5px 5px ; text-align: center">
+                            <h:commandButton value="H.S.C Admission" action="Accuntin.xhtml" actionListener="#{showall.view()}" style=" width:200px; height: 45px;"/>
+                             <h:commandButton value="Honours Admission" action="Accuntin.xhtml" actionListener="#{showall.view()}" style=" width:200px; height: 45px;"/>
+                             <h:commandButton value="Masters Admission" action="Accuntin.xhtml" actionListener="#{showall.view()}" style=" width:200px; height: 45px;"/>
+                        </div>
+                        <div style="   margin:0 auto; margin-top: 30px; width: 740px; height: 1200px;  border: 1px solid  #E1DDD9;  background: #E1DDD9;   margin-top: 30px; border-radius:5px 5px 5px ;">
+                            <div style="   margin:0 auto; margin-top: 30px; width: 700px; height: 1160px;  border: 1px solid  #E1DDD9;  background: #E1DDD9;   margin-top: 30px; border-radius:5px 5px 5px ;">
+                               <p:graphicImage library="images/" name="admissio.jpg"  style=" width:700px; height:1140px;"/>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+            <ui:include src="rightMenubarpage.xhtml"/> 
+
+        </div>
+        <ui:include src="footerPage.xhtml"/>
+     
+    </h:body>
+</html>
+

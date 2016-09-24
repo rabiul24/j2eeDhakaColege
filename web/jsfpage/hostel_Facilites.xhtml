@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <link href="cssStylePage/bodypage.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+
+        <ui:include src="headerPage.xhtml"/> 
+
+        <div style="width: 1088px; height:960px; margin: 0 auto; background: #E1DDD9;">  
+            <div style="margin-top:13px;
+                 width: 770px;
+                 height: 900px;
+                 float: left;
+                 background-color: #E1DDD9;">
+
+                <div style="margin-top:13px;
+                     width: 762px;
+                     height: 920px;">
+
+                    <div style="width: 750px;
+                         height: 700px;
+                         margin: 0 auto;
+                         background: #E1DDD9;
+                         margin-top: -13px;  ">
+                        <div class="mb_h_tf">
+                            <b>HOSTEL</b>
+                        </div>
+                        <div Style=" width:770px; height:190px; padding-left:0; background:#ffffff; border-radius: 0px 0px 4px; border:  1px solid #ffffff; margin: 0 auto; margin-bottom:20px;">
+                            <h:form>
+                            <table cellpadding="10px" cellspacing="10px" style=" font-family: fantasy; font-size: 14px">
+                                <tr>
+                                    <td>
+                                        <p:outputLabel for="medium" value="Medium"/><br/>
+
+                                        <p:selectOneMenu id="medium" value="#{hostelDropDownClass.medium}" style="width:220px">
+                                            <p:ajax listener="#{hostelDropDownClass.onMediumChange()}" update="department" />
+                                            <f:selectItem itemLabel="Select Medium" itemValue="" noSelectionOption="true" />
+                                            <f:selectItems value="#{hostelDropDownClass.mediums}" />
+                                        </p:selectOneMenu>
+                                    </td>
+
+                                    <td> <p:outputLabel for="department" value="Department"/><br/>
+
+                                        <p:selectOneMenu id="department" value="#{hostelDropDownClass.department}" style="width:220px">
+ 
+                                            <f:selectItem itemLabel="Select Department" itemValue="" noSelectionOption="true" />
+                                            <f:selectItems value="#{hostelDropDownClass.departments}" />
+                                        </p:selectOneMenu>
+
+                                    </td>
+                                    <td> <p:outputLabel   value="Year"/><br/>
+                                        <p:selectOneMenu  id="year"  value="#{hostelDropDownClass.year}" style="width:220px">
+                                            <f:selectItem itemLabel="Select Year"  noSelectionOption="true" />
+                                            <f:selectItem itemLabel="1st Year" itemValue="1st Year"/>
+                                            <f:selectItem itemLabel="2nd Year" itemValue="2nd Year"/>
+                                            <f:selectItem itemLabel="3rd Year" itemValue="3rd Year"/>
+                                            <f:selectItem itemLabel="4th Year" itemValue="4th Year"/>
+                                            <f:selectItem itemLabel="Final Year" itemValue="Final Year"/>
+                                        </p:selectOneMenu></td>
+                                </tr>
+                                <tr>
+                                    <td> <p:outputLabel value="Hostel/Hall "/><br/>
+                                        <p:selectOneMenu value="#{logInPage.loginType}" styleClass="menu" panelStyleClass="panel" style="width:220px;">
+
+                                            <f:selectItem itemLabel="Select " itemValue="" noSelectionOption="true"/>
+                                            <f:selectItem itemLabel="North Hall" itemValue="North Hall"/>
+                                            <f:selectItem itemLabel="South Hall" itemValue="South Hall"/>
+                                            <f:selectItem itemLabel="West Hall" itemValue="West Hall"/>
+                                            <f:selectItem itemLabel="Akhtarumanan Ilias Hall" itemValue="Akhtarumanan Ilias Hall"/>
+                                            <f:selectItem itemLabel="Dakkhinayon Hall" itemValue="Dakkhinayon Hall"/>
+                                            <f:selectItem itemLabel="International  Hall" itemValue="International Hall"/>
+                                            <f:selectItem itemLabel="Shahid Farhad Hossain Hall" itemValue="Shahid Farhad Hossain Hall"/>
+                                           
+                                          
+                                        </p:selectOneMenu></td>
+                                    <td> <p:outputLabel value="Room Number "/><br/>
+                                        <p:selectOneMenu value="#{logInPage.loginType}" styleClass="menu" panelStyleClass="panel" style="width:220px">
+
+                                            <f:selectItem itemLabel="Select " itemValue="" noSelectionOption="true"/>
+                                            <f:selectItem itemLabel="101" itemValue="101"/>
+                                            <f:selectItem itemLabel="102" itemValue="102"/>
+                                            <f:selectItem itemLabel="105" itemValue="105"/>
+                                            <f:selectItem itemLabel="106" itemValue="106"/>
+                                            <f:selectItem itemLabel="109" itemValue="109"/>
+                                            <f:selectItem itemLabel="1010" itemValue="1010"/>
+                                            <f:selectItem itemLabel="1011" itemValue="1011"/>
+                                            <f:selectItem itemLabel="1012" itemValue="1012"/>
+                                            <f:selectItem itemLabel="1013" itemValue="1013"/>
+                                            <f:selectItem itemLabel="1014" itemValue="1014"/>
+                                            <f:selectItem itemLabel="1015" itemValue="1015"/>
+                                            <f:selectItem itemLabel="1016" itemValue="1016"/>
+                                            <f:selectItem itemLabel="1017" itemValue="1017"/>
+                                            <f:selectItem itemLabel="1018" itemValue="1018"/>
+                                            <f:selectItem itemLabel="1019" itemValue="1019"/>
+                                            <f:selectItem itemLabel="1020" itemValue="1020"/>
+                                            <f:selectItem itemLabel="1021" itemValue="1021"/>
+                                            <f:selectItem itemLabel="1022" itemValue="1022"/>
+                                            <f:selectItem itemLabel="1023" itemValue="1023"/>
+                                            <f:selectItem itemLabel="1024" itemValue="1024"/>
+                                            <f:selectItem itemLabel="1025" itemValue="1025"/>
+                                            <f:selectItem itemLabel="1026" itemValue="1026"/>
+                                            <f:selectItem itemLabel="1027" itemValue="1027"/>
+                                            <f:selectItem itemLabel="1028" itemValue="1028"/>
+                                            <f:selectItem itemLabel="1029" itemValue="1030"/>
+                                            <f:selectItem itemLabel="1030" itemValue="Student"/>
+                                        </p:selectOneMenu></td>
+                                    <td><p:commandButton value="View" style="width:220px; background: #9999ff" /></td>
+                                </tr>
+                            </table>
+
+
+
+                            </h:form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ui:include src="rightMenubarpage.xhtml"/> 
+
+        </div>
+        <ui:include src="footerPage.xhtml"/>
+    </h:body>
+</html>
+

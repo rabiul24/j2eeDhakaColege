@@ -1,0 +1,241 @@
+.bodypanel{ 
+   margin-top:13px;
+    width: 770px;
+    height: 920px;
+    float: left;
+   background-color: #E1DDD9;
+    
+}
+
+.mainBody_Panel{
+    margin-top:13px;
+    width: 762px;
+    height: 900px;
+   
+   
+}
+
+.mb__Panel{
+    width: 750px;
+    height: 300px;
+    margin: 0 auto;
+    background: #E1DDD9;
+    margin-top: -13px;
+   
+   
+}
+.mb_h{
+    width:750px;
+    height:32px;
+    border: 1px solid #ffffff;
+    border-radius: 4px 4px 0px;
+    background: #1E5225;
+    color: #ffffff;
+    font-family:fantasy;
+    padding-left:20px;
+    padding-top:12px;
+    margin: 0 auto;
+
+    
+    
+}
+
+.mb_b{
+    width:770px;
+    height:235px;
+    padding-left:0;
+    background:#ffffff;
+    border-radius: 0px 0px 4px;
+    border:  1px solid #ffffff;
+    margin: 0 auto;
+    margin-bottom:20px;
+    
+}
+.f_d1_b_img{
+    margin-left:10px; 
+ 
+}
+
+.mb1__Panel{
+    width: 790px;
+    height: 235px;
+    background: #E1DDD9;
+    
+   
+   
+}
+
+.mb1_1_h{
+    width:350px;
+    height:32px;
+    border: 1px solid #ffffff;
+    border-radius: 4px 4px 0px;
+    background: #1E5225;
+    color: #ffffff;
+    font-family:fantasy;
+    padding-left:20px;
+    padding-top:12px;
+    margin: 0 auto;
+    
+    
+    
+}
+.mb1_1_b{
+    
+    width:370px;
+    height:140px;
+    padding-left:0;
+    background:#ffffff;
+    border-radius: 0px 0px 4px;
+    border:  1px solid #ffffff;
+    margin: 0 auto;
+    
+}
+
+/*
+teacher info page
+
+*/
+
+.bodypanel_tf{ 
+   margin-top:13px;
+    width: 770px;
+    height: 1450px;
+    float: left;
+   background-color: #E1DDD9;
+    
+}
+
+.mainBody_Panel_tf{
+    margin-top:13px;
+    width: 762px;
+    height: 1440px;
+   
+   
+}
+
+.mb__Panel_tf{
+    width: 750px;
+    height: 1210px;
+    margin: 0 auto;
+    background: #E1DDD9;
+    margin-top: -13px;
+   
+   
+}
+.mb_h_tf{
+    width:750px;
+    height:32px;
+    border: 1px solid #ffffff;
+    border-radius: 4px 4px 0px;
+    background: #1E5225;
+    color: #ffffff;
+    font-family:fantasy;
+    padding-left:20px;
+    padding-top:12px;
+    margin: 0 auto;
+   
+
+    
+    
+}
+
+.mb_b_tf{
+    width:770px;
+    height:1400px;
+    padding-left:0;
+    background:#ffffff;
+    border-radius: 0px 0px 4px;
+    border:  1px solid #ffffff;
+    margin: 0 auto;
+    margin-bottom:20px;
+    
+}
+.td_tnif{
+    width:570px;
+    height:60px;
+    font-family:fantasy;
+    padding-left: 30px;
+     
+ 
+}
+.td_tnif1{
+    width:100px;
+    height:60px;
+    font-family:fantasy;
+}
+
+
+/*
+Account teacher page
+*/
+
+
+.bodypanel_tf_a{ 
+   margin-top:13px;
+    width: 770px;
+    height: 1070px;
+    float: left;
+   background-color: #E1DDD9;
+    
+}
+
+.mainBody_Panel_tf_a{
+    margin-top:13px;
+    width: 762px;
+    height: 1070px;
+   
+   
+}
+
+.mb__Panel_tf_a{
+    width: 750px;
+    height: 1050px;
+    margin: 0 auto;
+    background: #E1DDD9;
+    margin-top: -13px;
+   
+   
+}
+.mb_h_tf_a{
+    width:750px;
+    height:32px;
+    border: 1px solid #ffffff;
+    border-radius: 4px 4px 0px;
+    background: #1E5225;
+    color: #ffffff;
+    font-family:fantasy;
+    padding-left:20px;
+    padding-top:12px;
+    margin: 0 auto;
+   
+
+    
+    
+}
+
+.mb_b_tf_a{
+    width:770px;
+    height:1010px;
+    padding-left:0;
+    background:#ffffff;
+    border-radius: 0px 0px 4px;
+    border:  1px solid #ffffff;
+    margin: 0 auto;
+    margin-bottom:20px;
+    
+}
+.td_tnif_s{
+    width:570px;
+    height:100px;
+    font-family:fantasy;
+    padding-left: 30px;
+     
+ 
+}
+.td_tnif1_s{
+    width:100px;
+    height:100px;
+    font-family:fantasy;
+}
+

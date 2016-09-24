@@ -1,0 +1,169 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 25, 2016, 9:43:10 PM
+    Author     : Rabiul
+*/
+
+.mainfooter{
+    width: 1088px;
+    height: 638px;
+    margin: 0 auto;
+    background: #E1DDD9;
+}
+
+.f_d1_h{
+    width:1030px;
+    height:32px;
+    border: 1px solid #ffffff;
+    border-radius: 4px 4px 0px;
+    background: #1E5225;
+    color: #ffffff;
+    font-family:fantasy;
+    padding-left:40px;
+    padding-top:12px;
+    margin: 0 auto;
+
+    
+    
+}
+
+.f_d1_b{
+    width:1070px;
+    height:140px;
+    padding-left:0;
+    background:#ffffff;
+    border-radius: 0px 0px 4px;
+    border:  1px solid #ffffff;
+    margin: 0 auto;
+    margin-bottom:20px;
+    
+}
+.f_d1_b_img{
+    margin-left:10px; 
+ 
+}
+.f_dd_m{
+    width:1070px;
+    height:360px; 
+    padding-left:0;
+    margin: 0 auto;
+    margin-bottom:20px;
+    
+}
+
+
+.f_d2_m{
+    width:340px;
+    height:350px; 
+    float:left;
+    margin-right:24px;
+}
+.f_d2_h{
+    width:300px;
+    height:32px;
+    border: 1px solid #ffffff;
+    border-radius: 4px 4px 0px;
+    background: #1E5225;
+    color: #ffffff;
+    font-family:fantasy;
+    padding-left:40px;
+    padding-top:12px;
+   
+}
+
+.f_d2_b{
+    width:340px;
+    height:310px;
+    padding-left:0;
+    background:#ffffff;
+    border-radius: 0px 0px 4px;
+    border:  1px solid #ffffff;
+ 
+}
+.f_d3_m{
+    width:340px;
+    height:250px; 
+    float:left;
+    margin-right:24px;
+   
+    
+}
+.f_d3_h{
+    width:300px;
+    height:32px;
+    border: 1px solid #ffffff;
+    border-radius: 4px 4px 0px;
+    background: #1E5225;
+    color: #ffffff;
+    font-family:fantasy;
+    padding-left:40px;
+    padding-top:12px;
+   
+}
+
+.f_d3_b{
+    width:340px;
+    height:210px;
+    padding-left:0;
+    background:#ffffff;
+    border-radius: 0px 0px 4px;
+    border:  1px solid #ffffff;
+    
+}
+.f_d4_m{
+    width:340px;
+    height:300px; 
+    float:left;
+  
+}
+.f_d4_h{
+    width:300px;
+    height:32px;
+    border: 1px solid #ffffff;
+    border-radius: 4px 4px 0px;
+    background: #1E5225;
+    color: #ffffff;
+    font-family:fantasy;
+    padding-left:40px;
+    padding-top:12px;
+    
+}
+
+.f_d4_b{
+    width:340px;
+    height:260px;
+    padding-left:0;
+    background:#ffffff;
+    border-radius: 0px 0px 4px;
+    border:1px solid #ffffff;
+   
+}
+
+.last_f_b{
+    width:1088px;
+    height:3px;
+    background: #C91419;
+    
+    margin: 0 auto;
+    
+}
+.last_f{
+    width:1046px;
+    height:32px;
+    border: 1px solid #1E5225;
+    background: #1E5225;
+    color: #ffffff;
+    padding-left:40px;
+    padding-top:12px;
+    margin: 0 auto;
+    
+}
+
+.last_txt{
+   font-size:12px;  
+    
+}

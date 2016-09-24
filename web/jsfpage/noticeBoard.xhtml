@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <link href="cssStylePage/bodypage.css" rel="stylesheet" type="text/css"/>
+
+        <style>
+            .div1{
+                width: 340px;
+                height:30px; 
+                font-size: 14px;
+                margin: 0 auto; 
+                background: #F5F5F5;
+                border-radius:6px 6px 6px; 
+                padding: 20px;
+                font-family: fantasy;
+                margin-top: 10px;
+
+
+            }
+            
+            .tr1{
+                
+                background:#009999;
+                color: #ffffff;
+                font-size: 14px;
+                
+                    
+            }
+            
+            .th1{
+                width:100px; 
+            }
+            .th2{
+                width:300px; 
+            }
+            .td1{
+                width:100px; 
+            }
+            .td2{
+                width:300px; 
+            }
+            
+        </style>
+    </h:head>
+    <h:body>
+
+        <ui:include src="headerPage.xhtml"/> 
+
+        <div style="width: 1088px; height:940px; margin: 0 auto; background: #E1DDD9;">  
+            <div style="margin-top:13px;
+                 width: 770px;
+                 height: 900px;
+                 float: left;
+                 background-color: #E1DDD9;">
+
+                <div style="margin-top:13px;
+                     width: 762px;
+                     height: 90px;">
+
+                    <div style="width: 750px;
+                         height: 850px;
+                         margin: 0 auto;
+                         background: #E1DDD9;
+                         margin-top: -13px;  ">
+                        <div class="mb_h_tf">
+
+                            <b>NOTICE BOARD</b>
+                        </div>
+                        <div style=" width:770px; height:850px; padding-left:0; background:#F5F5F5; border-radius: 0px 0px 4px; border:  1px solid #F5F5F5; margin-bottom:20px;">
+                            <div>
+                                <h:form>
+                                    <div style="   width:770px;
+                                         height:32px;
+                                         border: 1px solid #ffffff;
+                                         color: #ffffff;
+                                         font-family:fantasy;                                       
+                                         ">
+                                        <tr>
+                                            <th><h:commandButton value="Refresh" action="noticeBoard.xhtml" actionListener="#{notice.view()}" /></th>
+
+                                        </tr>  
+                                    </div>
+
+                                    <table border="1" style="border-collapse: collapse; font-family: fantasy">
+
+
+
+                                        <tr class="tr1">
+                                            <th class="th1" >Notice Serial</th>
+                                            <th class="th2">Class Susspend Notice</th>
+                                            <th class="th2">Exam Notice</th>
+                                            <th class="th2">Recent Notice</th>
+                                            <th class="th1">Date</th>
+                                        </tr>
+
+                                        <c:forEach var="row" items="#{notice.vewList}">
+                                            <tr>
+                                                <td class="td1"><h:outputText value="#{row.id}"/></td>
+                                                <td  class="td2"><h:outputText value="#{row.classSuuspendNotice}"/></td>
+                                                <td  class="td2"><h:outputText value="#{row.examNotice}"/></td>
+                                                <td  class="td2"><h:outputText value="#{row.rcenImportentNotice}"/></td>
+                                                <td  class="td1"><h:outputText value="#{row.date}"/></td>
+                                            </tr>
+
+                                        </c:forEach>
+
+                                    </table>
+                                </h:form>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <ui:include src="rightMenubarpage.xhtml"/> 
+
+        </div>
+        <ui:include src="footerPage.xhtml"/>
+
+    </h:body>
+</html>
+
+

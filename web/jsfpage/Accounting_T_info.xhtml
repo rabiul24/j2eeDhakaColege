@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <style>
+
+
+            .navMenu{
+                margin: 0;
+                padding : 0;
+            }
+
+            .navMenu ul{
+                margin: 0;
+                padding : 0;
+                line-height : 20px;
+            }
+            .navMenu li{
+                margin: 0;
+                padding : 0;
+                list-style : none;
+                float : left;
+                position : relative;
+                background-color :#1E5225;
+            }
+
+            .navMenu ul li a{
+
+                color: #000000;
+                display: block;
+                font-family: Verdana;
+                font-size: 14px;
+                font-weight: normal;
+                height: 30px;
+                padding: 10px;
+                text-decoration: none;
+            }
+
+            .navMenu ul ul{
+                position : absolute;
+                visibility : hidden;
+                top : 41px;
+            }
+
+            .navMenu ul ul li{
+                background-color :#5BB53B;
+                text-align:left;
+                width: 260px;    
+            }
+
+
+            .navMenu ul ul li:hover{
+                background-color :#000000;  
+            }
+
+            .navMenu ul li:hover ul{
+                visibility : visible;
+
+            }  
+
+            .navMenu li:hover{
+                background-color : #ffffff;
+                color: #000000;
+
+            }
+
+
+        </style>
+
+    </h:head>
+    <h:body>
+
+        <ui:include src="headerPage.xhtml"/> 
+
+
+
+
+        <div style="width: 1088px; height:1210px; margin: 0 auto; background: #E1DDD9;"> 
+
+
+
+            <div style="margin-top:13px;width: 770px;height: 1100px;float: left; background-color: #E1DDD9;">
+                <div style="width:760px; height:40px; margin: 0 auto; background: #E1DDD9; padding-top:10px ">  
+
+                    <span style="font-family: fantasy; font-size: 20px;">  Deapartment : Accounting</span>
+                </div>
+                <div style=" margin-top:13px; width: 762px; height: 1080px;">
+                    <div style=" width: 750px; height: 1070px; margin: 0 auto; background: #E1DDD9; margin-top: -13px;">
+                        <div style="  width:750px; height:55px; border: 1px solid #ffffff; border-radius: 4px 4px 0px; background: #1E5225; color: #ffffff;
+                             font-family:fantasy;
+                             padding-left:20px;
+                             padding-top:12px;
+                             margin: 0 auto;">
+
+                            <div class="wraper">
+                                <div class="navMenu">
+                                    <ul>
+                                        <li>
+                                            <a href="#"  style="background: #ffffff;">DESCRIPTION</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="Accounting_T_info.xhtml">TEACHER</a>	
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="student_view.xhtml">STUDENT</a>
+
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li> 
+                                            <a href="admission.xhtml">ADMISSION</a>
+
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li> 
+                                            <a href="">SEMINAR</a>
+
+                                        </li>
+                                    </ul>
+
+                                    <ul>
+                                        <li>
+                                            <a href="">RESULT</a>
+                                        </li>
+                                    </ul>  
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div style=" width:770px;
+                             height:1050px;
+                             padding-left:0;
+                             background:#ffffff;
+                             border-radius: 0px 0px 4px;
+                             border:  1px solid #ffffff;
+                             margin: 0 auto;
+                             margin-bottom:20px;">
+                            <!--        <p:panel style="background-image: url(../resources/demo/images/h3.PNG); background-repeat: repeat-x; width: 74%; height: 320px; margin-left:180px;">-->
+
+
+                            <!-- pmenu bae-->
+                            <div style="padding-left:10px;">
+
+                                <div class="mb_b_tf_a">
+                         
+                                    <div style="   margin:0 auto; width: 740px; height: 45px; padding-top: 5px; border: 1px solid  #E1DDD9;   margin-top: 30px; border-radius:5px 5px 5px ; text-align: center; background: #E1DDD9;">
+                                        <div style="float: left; width: 590px; height: 40px; font-size:20px; font-family: fantasy; color: #ffffff; "> Department: Accounting</div>
+
+                                        <div style="float: left; width: 60px; height:40px; font-family:fantasy;  padding-top: 5px; ">
+                                            <h:commandButton value="View"  actionListener="#{showall.view()}" action="Accounting_T_info.xhtml"/></div>
+                                    </div>
+                                    <div style="   margin:0 auto; width: 740px; height:800px;  border: 1px solid  #E1DDD9;  background: #E1DDD9;   margin-top: 20px; border-radius:5px 5px 5px ;">
+
+                                        <h:form>
+
+                                            <table >
+
+
+                                                <tr style="background: #77cab2; font-family: fantasy; text-align: center">
+                                                    <th>Id</th>
+                                                    <th>Name</th>
+                                                    <th>Father/Husband Name</th>
+                                                    <th>Mother Name</th>
+                                                    <th>Religion</th>
+
+                                                    <th>Blood Group</th>
+                                                    <th>Designation</th>
+                                                    <th>Picture</th>
+
+                                                </tr>
+
+                                                <c:forEach var="row" items="#{showall.lst}">
+                                                    <tr style="background: #fceded; font-family: fantasy; text-align: center">
+                                                        <td><h:outputText value="#{row.id}"/></td>
+                                                        <td><h:outputText value="#{row.name}"/></td>
+                                                        <td><h:outputText value="#{row.forhname}"/></td>
+                                                        <td><h:outputText value="#{row.mname}"/></td>
+                                                        <td><h:outputText value="#{row.religeonn}"/></td>
+                                                        <td><h:outputText value="#{row.bloodGroup}"/></td>
+                                                        <td><h:outputText value="#{row.designation}"/></td>
+                                                        <td><p:graphicImage library="teacher/" name="#{row.image}"  style=" width:60px; height:60px;"/></td>
+
+                                                    </tr>
+
+                                                </c:forEach>
+
+                                            </table>
+
+                                        </h:form>                       
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <ui:include src="rightMenubarpage.xhtml"/> 
+        </div>
+        <ui:include src="footerPage.xhtml"/>
+
+
+    </h:body>
+</html>
+

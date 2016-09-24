@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+         <link href="cssStylePage/homePage.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+        <div class="hm_hd_p_m">
+        <p:graphicImage library="images/" name="dj.png"  style=" width:1088px; height:380px;"/>
+            <div class="latestNewstext">
+                <p style=" text-align: center"> LATEST NEWS ></p>
+            </div>
+            <div class="latestNews">
+                <marquee  behavior="scroll" align="middle" direction="left" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()">
+                     <h:form>
+                    <p>  
+                        Date:<h:outputText value="#{dateandTime.ds}"/>
+                        <a href="ddd.ff"  style="text-decoration:none;">
+                          
+                            <h:outputLabel value="#{notice.rcenImportentNotice}"/>
+                            Notice for Academic Calendar Class XI Business Studies Group Session 2016-2017.pdf
+                            
+                        </a>
+                      
+                    </p>
+                           </h:form>
+
+                </marquee>
+
+
+            </div>
+        </div>
+    </h:body>
+</html>
+

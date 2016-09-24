@@ -1,0 +1,21 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 5, 2016, 9:59:16 AM
+    Author     : Rabiul
+
+
+
+rechepta
+*/
+
+* { font-size: 12px; font-family: Verdana }
+
+input, textarea { border: 1px solid #ccc }
+
+tr { margin: 5px; padding:5px;}
+
+.alert { font-size:15px; color:red; font-weight:bolder }

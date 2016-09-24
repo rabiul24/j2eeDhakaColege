@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+        <style>
+            table{
+                border:  1px solid #cc0000;
+                border-collapse:collapse;
+                margin:  100px auto;
+                
+            }
+            .tr1{
+                background-color: #ff9900;
+                color: #006600;
+                
+            }
+            caption{
+                 border:  1px solid #cc0000;
+                 color:#ffffff ;
+                 font-size: 20px;
+                 background-color: #660066;
+            }
+           
+         
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+           
+             <table border="1">
+                  <caption>Home Page</caption>
+                 
+                    
+                     
+                
+           
+       
+            <tr class="tr1">
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Date</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Date</th>
+                <th>Date</th>
+            </tr>
+      
+                  <c:forEach var="row" items="#{showall.lst}">
+            <tr>
+                <td><h:outputText value="#{row.id}"/></td>
+                <td><h:outputText value="#{row.name}"/></td>
+                <td><h:outputText value="#{row.forhname}"/></td>
+                <td><h:outputText value="#{row.mname}"/></td>
+                <td><h:outputText value="#{row.dob}"/></td>
+                <td><h:outputText value="#{row.gender}"/></td>
+                <td><h:outputText value="#{row.religeonn}"/></td>
+                <td><h:outputText value="#{row.bloodGroup}"/></td>
+               
+                <td><h:outputText value="#{row.deparment}"/></td>
+                <td><h:outputText value="#{row.designation}"/></td>
+                <td><p:graphicImage library="teacher/" name="#{row.image}"  style=" width:60px; height:60px;"/></td>
+                
+            </tr>
+           
+        </c:forEach>
+            
+              </table>
+           
+        </h:form>
+    </h:body>
+</html>
+

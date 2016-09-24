@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <link href="cssStylePage/bodypage.css" rel="stylesheet" type="text/css"/>
+
+        <style>
+        .mainDiv {width: 60%; height: auto; margin: 0 auto;}
+          
+            .centerDiv{height: auto; width:79%; float: left;text-align: center;
+                       font-family: fantasy;
+                       font-size: 14px;
+                       margin-left: 10px;
+                       margin-bottom: 15px;
+                       margin-top: 40px;
+            }
+        </style>
+    </h:head>
+    <h:body>
+
+        <ui:include src="headerPage.xhtml"/> 
+
+        <div style="width: 1088px; height:1125px; margin: 0 auto; background: #E1DDD9;">  
+            <div style="margin-top:13px;
+                 width: 770px;
+                 height: 1100px;
+                 float: left;
+                 background-color: #E1DDD9;">
+
+                <div style="margin-top:13px;
+                     width: 762px;
+                     height: 90px;">
+
+                    <div style="width: 750px;
+                         height: 1100px;
+                         margin: 0 auto;
+                         background: #E1DDD9;
+                         margin-top: -13px;  ">
+                        <div class="mb_h_tf">
+                            <b>TEACHER REGISTRATION</b>
+                        </div>
+
+                        <div style=" width:770px; height:360px; padding-left:0; background:#f8f8f8; border-radius: 0px 0px 4px; border:  1px solid #f8f8f8; margin-bottom: 20px;">
+                            <h:form>
+            <div class="mainDiv">
+               
+                <div class="centerDiv">
+
+                    <center>
+
+                        <div style="height: 300px; width: 400px; border-radius: 5px; background-color: #f8f8f8;">
+
+                            <h2>Create Teacher Account</h2>
+
+                            <div>
+                                <table style="margin-top: 20px;">
+                                    
+                                    <tr>
+                                        <td><p:outputLabel value="User Name" /></td>
+                                        <td>:</td>
+                                        <td>
+                                            <p:inputText value="#{teacherRegi.id}" placeholder="User Name"/> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p:outputLabel value="Name" /></td>
+                                        <td>:</td>
+                                        <td>
+                                            <p:inputText value="#{teacherRegi.name}" class="inp" placeholder=" Name" ></p:inputText>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p:outputLabel value="Password "/></td>
+                                        <td>:</td>
+                                        <td>
+                                            <p:password value="#{teacherRegi.pass}" class="inp" placeholder="Password" ></p:password>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p:outputLabel value="Phone " /></td>
+                                        <td>:</td>
+                                        <td>
+                                            <p:inputText value="#{teacherRegi.date}" class="inp" placeholder="999999999" ></p:inputText>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p:outputLabel value="Date of Birth " /></td>
+                                        <td>:</td>
+                                        <td>
+                                            <p:inputText value="#{teacherRegi.phone}" class="inp" placeholder="2000-00-00" ></p:inputText>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div style="margin-top: 15px;">
+                                <h:commandButton action="#{teacherRegi.doInsert()}" value="Submit"/>
+                            </div>
+                            <h:outputLabel value="#{teacherRegi.ermsg}" style="color: red"/>
+
+
+                        </div>
+
+
+                    </center>
+
+                </div>
+                
+
+            </div>
+        </h:form>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <ui:include src="rightMenubarpage.xhtml"/> 
+
+        </div>
+        <ui:include src="footerPage.xhtml"/>
+
+    </h:body>
+</html>
+

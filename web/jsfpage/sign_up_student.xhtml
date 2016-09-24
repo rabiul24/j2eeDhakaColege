@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <style>
+            .mainDiv {width: 90%; height: auto; margin: 0 auto;}
+          
+            .centerDiv{height: auto; width:79%; float: left;text-align: center;
+                       font-family: fantasy;
+                       font-size: 14px;
+                       margin-left: 10px;
+                       margin-bottom: 15px;
+                       margin-top: 40px;
+            }
+          
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+            <div class="mainDiv">
+               
+                <div class="centerDiv">
+
+                    <center>
+
+                        <fieldset style="height: 300px; width: 400px; border-radius: 5px; background-color: #c7ddef;">
+
+                            <h2>Create Student Account</h2>
+
+                            <div>
+                                <table style="margin-top: 20px;">
+                                    
+                                    <tr>
+                                        <td><p:outputLabel value="Student Name " /></td>
+                                        <td>:</td>
+                                        <td>
+                                            <p:inputText value="#{studentRegi.id}" class="inp" placeholder="Student Identity" ></p:inputText>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p:outputLabel value="Name " /></td>
+                                        <td>:</td>
+                                        <td>
+                                            <p:inputText value="#{studentRegi.name}" class="inp" placeholder="Student Name" ></p:inputText>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p:outputLabel value="Password "/></td>
+                                        <td>:</td>
+                                        <td>
+                                            <p:password value="#{studentRegi.pass}" class="inp" placeholder="Password" ></p:password>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p:outputLabel value="Phone " /></td>
+                                        <td>:</td>
+                                        <td>
+                                            <p:inputText value="#{studentRegi.phon}" class="inp" placeholder="Phone number" ></p:inputText>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p:outputLabel value="Date of Birth " /></td>
+                                        <td>:</td>
+                                        <td>
+                                            <p:inputText value="#{studentRegi.date}" class="inp" placeholder="Phone number" ></p:inputText>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div style="margin-top: 15px;">
+                                <p:commandButton action="#{studentRegi.doInsert()}" value="Submit"/>
+                            </div>
+                            <p:outputLabel id="msg"/>
+
+
+                        </fieldset>
+
+
+                    </center>
+
+                </div>
+                
+
+            </div>
+        </h:form>
+
+    </h:body>
+</html>
+

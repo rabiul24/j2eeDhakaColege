@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <link href="cssStylePage/bodypage.css" rel="stylesheet" type="text/css"/>
+
+        <style>
+            .div1{
+                width: 340px;
+                height:30px; 
+                font-size: 14px;
+                margin: 0 auto; 
+                background: #F5F5F5;
+                border-radius:6px 6px 6px; 
+                padding: 20px;
+                font-family: fantasy;
+                margin-top: 10px;
+
+
+            }
+            .td1{
+                width: 200px; 
+
+            }
+            .td2{
+                width: 350px; 
+
+            }
+            .td3{
+                width: 200px; 
+
+            }
+            .td4{
+                width: 600px; 
+
+            }
+
+        </style>
+    </h:head>
+    <h:body>
+
+        <ui:include src="headerPage.xhtml"/> 
+
+        <div style="width: 1088px; height:940px; margin: 0 auto; background: #E1DDD9;">  
+            <div style="margin-top:13px;
+                 width: 770px;
+                 height: 920px;
+                 float: left;
+                 background-color: #E1DDD9;">
+
+                <div style="margin-top:13px;
+                     width: 762px;
+                     height: 90px;">
+
+                    <div style="width: 750px;
+                         height: 910px;
+                         margin: 0 auto;
+                         background: #E1DDD9;
+                         margin-top: -13px;  ">
+                        <div class="mb_h_tf">
+                            <b>STUDENT PROFILE</b>
+                        </div>
+                        <div style=" width:770px; height:750px; padding-left:0; background:#ffffff; border-radius: 0px 0px 4px; border:  1px solid #ffffff; margin-bottom:20px;">
+                            <h:form>
+                                <div style=" width:768px; height:44px; padding-left:0; border:1px solid #E1DDD9;  background:#E1DDD9;  border-radius: 0px 0px 4px;  margin-bottom:20px;">
+                                    <div style=" width:768px; height:44px; padding-left:0; border:1px solid #E1DDD9;  background:#E1DDD9;  border-radius: 0px 0px 4px;  margin-bottom:20px;">
+
+
+                                        <div style="  float: left; width:680px; height:42px; padding-left:0; border:1px solid #E1DDD9;  border-radius: 0px 0px 4px;  margin-bottom:20px;">
+
+                                        </div>
+                                        <div style="float: left; width:80px; height:42px; padding-left:0; border:1px solid #E1DDD9;  border-radius: 0px 0px 4px;  margin-bottom:20px;">
+                                          
+                                            <h:commandButton value="Log Out"  action="Loginpage.xhtml" style="width:80px; height:40px;  font-size: 14px; background: #582ab4; color:#ffffff; font-weight:bold;  "/> 
+
+                                        </div>
+                                    </div> 
+
+
+                                </div>    
+
+
+                                <div style=" width:730px; height:600px; padding-left:0; margin-bottom:20px; margin-left:15px;   background: #F5F5F5; border:5px solid #F5F5F5;">
+
+                                    <div  style=" width:400px;  margin: 0 auto ; font-size:20px; font-family: fantasy; text-align: center; " >
+                                        <h2>Edit Your Profile</h2>
+                                        <h:outputLabel value="#{viwStudent.rightMsg}" style=" color: green;"/>
+                                                       <h:outputLabel value="#{viwStudent.ermsg}" style=" color: red;"/>
+                                    </div>
+                                    <div style="width:410px;  margin: 0 auto; height:420px; padding-left:0; margin-bottom:8px ;  margin-top:50px; border:1px solid #582ab4;">
+
+
+
+                                        <table style=" border-collapse: collapse; font-family: fantasy; color:#000000;"> 
+
+                                            <tr>
+                                                <td class="td1"> Name </td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.name}"/></td>    
+                                            </tr>
+                                            <tr>
+                                                <td class="td1"> Father's Name </td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.forhname}"/></td>    
+                                            </tr>
+                                            <tr>
+                                                <td class="td1">Mother's Name </td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.mname}"/></td>    
+                                            </tr>
+                                            <tr>
+                                                <td class="td1"> Date of Birth</td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.dob}"/></td>    
+                                            </tr>
+                                            <tr>
+                                                <td class="td1"> Contact Mobile</td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.phn}"/></td>    
+                                            </tr>
+                                            <tr>
+                                                <td class="td1"> National Id Number</td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.nid}"/></td>    
+                                            </tr>
+                                            <tr>
+                                                <td class="td1">Gender</td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.gender}"/></td>    
+                                            </tr>
+                                            <tr>
+                                                <td class="td1">Religion</td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.religeonn}"/></td>    
+                                            </tr>
+                                            <tr>
+
+                                                <td class="td1"> Present Address</td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.presentAdd}"/></td>    
+
+                                            </tr>
+                                            <tr>
+
+                                                <td class="td1"> Permanent Address</td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.adds}"/></td>    
+
+                                            </tr>
+                                            <tr>
+
+                                                <td class="td1"> Gurdian Phone</td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.gdphn}"/></td>    
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td class="td1">Department </td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.depart}"/></td>    
+
+                                            </tr>
+                                            <tr>
+
+                                                <td class="td1"> Examination</td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.media}"/></td>    
+
+                                            </tr>
+                                            <tr>
+
+                                                <td class="td1">Year</td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.year}"/></td>    
+
+                                            </tr>
+                                            <tr>
+
+                                                <td class="td1"> session</td>
+                                                <td class="td2"><h:inputText value="#{viwStudent.ssessn}"/></td>    
+
+                                            </tr>
+                            
+                                        </table>
+                                    </div>
+
+
+
+
+                                    <div style=" width:648px; height:44px; padding-left:0;   margin-bottom:20px;">
+
+
+                                        <div style="  float: left; width:410px; height:42px; padding-left:0;  margin-bottom:20px;">
+
+                                        </div>
+                                        <div style="float: left; width:160px; height:42px; padding-left:0; border:1px solid #E1DDD9;  border-radius: 0px 0px 4px;  margin-bottom:20px;">
+                                            <h:commandButton value="Update" action="#{viwStudent.doUpdate()}"   style="width:80px; height:40px;  font-size: 14px;  "/> 
+                                            <h:commandButton value="View" action="OneStudentView.xhtml" actionListener="#{viwStudent.view()}" style="width:80px; height:40px;  font-size: 14px;  "/> 
+                                           
+
+                                        </div>
+                                    </div>  
+
+                                </div>
+
+                            </h:form>  
+
+                        </div>                                
+                    </div>              
+                </div>
+            </div>
+            <ui:include src="rightMenubarpage.xhtml"/> 
+        </div>
+        <ui:include src="footerPage.xhtml"/>
+    </h:body>
+</html>
+

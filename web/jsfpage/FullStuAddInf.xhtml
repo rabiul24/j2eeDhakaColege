@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <link href="cssStylePage/bodypage.css" rel="stylesheet" type="text/css"/>
+
+        <style>
+            .div1{
+
+                background:#f8f8f8;
+                font-family: fantasy;
+                margin: 0 auto;
+                width: 770px;
+                height:150px; 
+               
+
+            }
+            .div2{
+
+                background:#f8f8f8;
+                font-family: fantasy;
+                margin: 0 auto;
+                width: 770px;
+                height:190px; 
+               
+
+            }
+            .div3{
+
+                background:#f8f8f8;
+                font-family: fantasy;
+                margin: 0 auto;
+                width: 770px;
+                height:430px; 
+               
+
+            }
+            .div4{
+
+                background:#f8f8f8;
+                font-family: fantasy;
+                margin: 0 auto;
+                width: 770px;
+                height:80px; 
+               
+
+            }
+
+
+          .td_r{
+                width: 600px;
+                height:40px; 
+                font-family: fantasy;
+
+            }
+        </style>
+    </h:head>
+    <h:body>
+
+        <ui:include src="headerPage.xhtml"/> 
+
+        <div style="width: 1088px; height:1125px; margin: 0 auto; background: #E1DDD9;">  
+            <div style="margin-top:13px;
+                 width: 770px;
+                 height: 1100px;
+                 float: left;
+                 background-color: #E1DDD9;">
+
+                <div style="margin-top:13px;
+                     width: 762px;
+                     height: 90px;">
+
+                    <div style="width: 750px;
+                         height: 1100px;
+                         margin: 0 auto;
+                         background: #E1DDD9;
+                         margin-top: -13px;  ">
+                        <div class="mb_h_tf">
+                            <b>STUDENT ADD</b>
+                        </div>
+
+                        <div style=" width:770px; height:1041px; padding-left:0; background:#ffffff; border-radius: 0px 0px 4px; border:  1px solid #ffffff; margin-bottom: 20px;">
+                            <h:form> 
+                                <div class="div1" >
+
+                                    <span style=" font-size:20px;  color: #acabdf"> Payment Information</span>
+                                    <table>
+
+                                        <tr>
+                                            <td class="td_r">
+                                                <b> Tarnsaction Id :</b><br/><h:outputLabel value="#{paymentInfo.transactionid}"/>                                                 
+                                            </td>
+                                            <td class="td_r">
+                                                <b>  Roll Number :</b><br/><h:outputLabel value="#{paymentInfo.rollNum}"/>                                                 
+                                            </td >
+                                        </tr>
+                                        <tr>
+                                            <td  class="td_r">
+                                                <b>  Current Ammount :</b><br/><h:outputLabel value="#{paymentInfo.ammount}"/>                                                 
+                                            </td>
+                                            <td  class="td_r">
+                                                <b> Phone Number : </b><br/><h:outputLabel value="#{paymentInfo.phone}"/>                                                 
+                                            </td>
+                                        </tr> 
+                                    </table>
+
+
+                                </div>
+                                <div class="div2" >
+
+                                    <span style=" font-size:20px; color: #acabdf"> Student Basic Information</span>
+                                    <table cellspacing="5px">
+
+                                        <tr>
+                                            <td>
+                                                <b> First Name:</b><br/><p:inputText placeholder="First Name" />                                      
+                                            </td>
+                                            <td>
+                                                <b> Last Name :</b><br/><p:inputText placeholder="Last Name" />                                                
+                                            </td>
+                                            <td>
+                                                <b> Date Of Birth :</b><br/><p:inputText placeholder="Date Of Birth" />                                                 
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>  Gender:</b><br/>
+                                                <p:selectOneMenu value="#{logInPage.loginType}" styleClass="menu" panelStyleClass="panel" style="width: 230px;">
+
+                                                    <f:selectItem itemLabel="Select Type" itemValue="" noSelectionOption="true"/>
+                                                    <f:selectItem itemLabel="Male" itemValue="Male"/>
+                                                    <f:selectItem itemLabel="Female" itemValue="Female"/>
+                                                    
+                                                </p:selectOneMenu>                                               
+                                            </td>
+                                            <td>
+                                                <b>  Religion:</b><br/>
+                                                <p:selectOneMenu value="#{logInPage.loginType}" styleClass="menu" panelStyleClass="panel" style="width: 230px;">
+
+                                                    <f:selectItem itemLabel="Select Type" itemValue="" noSelectionOption="true"/>
+                                                    <f:selectItem itemLabel="Islam" itemValue="Islam"/>
+                                                    <f:selectItem itemLabel="Hindu" itemValue="Hindu"/>
+                                                    <f:selectItem itemLabel="Christ" itemValue="Christ"/>
+                                                    <f:selectItem itemLabel="Budhist" itemValue="Budhist"/>
+                                                    
+                                                </p:selectOneMenu>                                               
+                                            </td>
+                                           
+                                              <td>
+                                                <b> Ntional Id Number :</b><br/><p:inputText placeholder="Ntional Id Number" />                                                 
+                                            </td>                                                
+                                           
+                                        </tr> 
+                                    </table>
+                                </div>
+                                <div class="div3" >
+
+                                    <span style=" font-size:20px; color: #acabdf"> Student Comunication Information</span>
+                                    <table cellspacing="5px">
+
+                                        <tr>
+                                            <td>
+                                                <b> Present Address:</b><br/><p:inputText  value="" placeholder="Present Address"  style=" width:700px"/>                                      
+                                            </td>
+                                          
+                                         
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b> Permanent Address:</b><br/><p:inputText  value="" placeholder="Permanent Address"  style=" width:700px"/>                                      
+                                            </td>
+                                          
+                                          
+                                        </tr>
+                                    </table  >
+                                    <table cellspacing="5px">
+                                        <tr>
+                                            <td>
+                                                <b> Father Name:</b><br/><p:inputText  value="" placeholder="Father Name "  style=" width:340px"/>                                      
+                                            </td>
+                                            <td>
+                                                <b> Phone Number:</b><br/><p:inputText  value="" placeholder="99999999999"  style=" width:340px"/>                                      
+                                            </td>
+                                          
+                                          
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b> Mother  Name:</b><br/><p:inputText  value="" placeholder="Mother Name"  style=" width:340px"/>                                      
+                                            </td>
+                                            <td>
+                                                <b> Phone Number:</b><br/><p:inputText  value="" placeholder="99999999999"  style=" width:340px"/>                                      
+                                            </td>
+                                          
+                                          
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b> Student Email:</b><br/><p:inputText  value="" placeholder="aaaa@gmail.com"  style=" width:340px"/>                                      
+                                            </td>
+                                            <td>
+                                                <b>  Student Phone Number:</b><br/><p:inputText  value="" placeholder="99999999999"  style=" width:340px"/>                                      
+                                            </td>
+                                          
+                                          
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b> Blood Group</b><br/>
+                                                <p:selectOneMenu value="#{logInPage.loginType}" styleClass="menu" panelStyleClass="panel" style="width: 350px;">
+
+                                                    <f:selectItem itemLabel="Select Type" itemValue="" noSelectionOption="true"/>
+                                                    <f:selectItem itemLabel="A+" itemValue="A+"/>
+                                                    <f:selectItem itemLabel="B+" itemValue="B+"/>
+                                                    <f:selectItem itemLabel="O+" itemValue="O+"/>
+                                                    <f:selectItem itemLabel="O-" itemValue="O-"/>
+                                                    
+                                                </p:selectOneMenu>                                               
+                                            </td>
+                                            <td>
+                                                <b>Image:</b><br/><p:fileUpload  mode="simple"  />                                    
+                                            </td>
+                                          
+                                          
+                                        </tr>
+                                      
+                                     
+                                    </table>
+                                </div>
+                                <div class="div2" >
+
+                                    <span style=" font-size:20px; color: #acabdf"> Student Academic Information</span>
+                                    <table cellspacing="5px">
+
+                                        <tr>
+                                            <td>
+                                                <b> Campus</b><br/><h:outputLabel value="Dhaka College"/>                                    
+                                            </td>
+                                          <td>
+                                                <b> Year:</b><br/><p:inputText placeholder="Year" />                                      
+                                            </td>
+                                           <td>
+                                                <b>  Cass:</b><br/>
+                                                <p:selectOneMenu value="#{logInPage.loginType}" styleClass="menu" panelStyleClass="panel" style="width: 230px;">
+
+                                                    <f:selectItem itemLabel="Select Type" itemValue="" noSelectionOption="true"/>
+                                                    <f:selectItem itemLabel="HSC" itemValue="HSC"/>
+                                                    <f:selectItem itemLabel="Honours" itemValue="Honours"/>
+                                                    <f:selectItem itemLabel="Masters" itemValue="Masters"/>
+                                                    
+                                                </p:selectOneMenu>                                               
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                           <td>
+                                                <b> Department</b><br/><p:inputText placeholder="DepartmentName" />                                      
+                                            </td>
+                                           <td>
+                                                <b> Semister</b><br/><p:inputText placeholder="Semister" />                                      
+                                            </td>
+                                           
+                                              <td>
+                                                <b> Seession</b><br/><p:inputText placeholder="2010-2011" />                                                 
+                                            </td>                                                
+                                           
+                                        </tr> 
+                                    </table>
+                                </div>
+                                <div class="div4">
+                                    <div style=" width: 570px; height: 50px; float:left">
+                                        
+                                    </div>
+                                    <div style=" width: 150px; height: 50px; float:left">
+                                        <h:commandButton value="Submit" style=" width: 150px; color: #ffffff; background: #5BB53B"   />
+                                    </div>
+                                  
+                                </div>
+                                    
+                             
+                            </h:form>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <ui:include src="rightMenubarpage.xhtml"/> 
+
+        </div>
+        <ui:include src="footerPage.xhtml"/>
+
+    </h:body>
+</html>
+

@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <link href="cssStylePage/bodypage.css" rel="stylesheet" type="text/css"/>
+
+        <style>
+            .div1{
+                width: 340px;
+                height:30px; 
+                font-size: 14px;
+                margin: 0 auto; 
+                background: #F5F5F5;
+                border-radius:6px 6px 6px; 
+                padding: 20px;
+                font-family: fantasy;
+                margin-top: 10px;
+
+
+            }
+        </style>
+    </h:head>
+    <h:body>
+
+        <ui:include src="headerPage.xhtml"/> 
+
+        <div style="width: 1088px; height:940px; margin: 0 auto; background: #E1DDD9;">  
+            <div style="margin-top:13px;
+                 width: 770px;
+                 height: 900px;
+                 float: left;
+                 background-color: #E1DDD9;">
+
+                <div style="margin-top:13px;
+                     width: 762px;
+                     height: 90px;">
+
+                    <div style="width: 750px;
+                         height: 850px;
+                         margin: 0 auto;
+                         background: #E1DDD9;
+                         margin-top: -13px;  ">
+                        <div class="mb_h_tf">
+                            <b> WelCome To Add Notice Page </b>
+                        </div>
+                        <div style=" width:770px; height:800px; padding-left:0; background:#F5F5F5; border-radius: 0px 0px 4px; border:  1px solid #F5F5F5; margin-bottom:20px;">
+                            <div>
+                                <h:form>
+                                    <div style=" width:768px; height:44px; padding-left:0; border:1px solid #E1DDD9;  background:#E1DDD9;  border-radius: 0px 0px 4px;  margin-bottom:20px;">
+
+
+                                        <div style="  float: left; width:320px; height:42px; padding-left:0; border:1px solid #E1DDD9;  border-radius: 0px 0px 4px;  margin-bottom:20px;">
+
+                                        </div>
+                                        <div style="float: left; width:440px; height:42px; padding-left:0; border:1px solid #E1DDD9;  border-radius: 0px 0px 4px;  margin-bottom:20px;">
+                                            <h:commandButton value="Back" action="UserPage_up_de_main.xhtml"  actionListener="#{notice.view()}"  style="width:180px; height:40px;  background: #5BB53B; color:#ffffff; font-size: 14px;  "/> 
+                                            <h:commandButton value="View"  action="UserPage_up_de_main.xhtml" actionListener="#{notice.view()}" style="width:180px; height:40px; background: #5BB53B; color:#ffffff;  font-size: 14px;  "/> 
+                                            <h:commandButton value="Log Out"  action="Loginpage.xhtml" style="width:80px; height:40px;  font-size: 14px; background: #582ab4; color:#ffffff; font-weight:bold;  "/> 
+
+                                        </div>
+                                    </div>   
+                                </h:form>
+                            </div>
+                            <div>
+
+                                <h:form>
+                                    <div  style="width:600px; height:260px; padding-left:0; margin: 0 auto;  border-radius: 0px 0px 4px;  margin-bottom:20px; ">
+                                        <table cellspacing="10px" style="text-align: center">
+                                        <tr style="background:#cc00ff; color: #ffffff; height: 40px; font-size:20px; ">
+                                            
+                                            <td >Class Susspend Notice</td>
+                                            <td >Exam Notice</td>
+                                            <td>Recent Impotant Notice</td>
+                                          
+                                          
+                                        </tr>
+                                        <tr>
+
+                                   
+                                            <td><h:inputTextarea value="#{notice.classSuuspendNotice}" rows="10"/></td>
+                                            <td><h:inputTextarea value="#{notice.examNotice}" rows="10" /></td>
+                                            <td><h:inputTextarea value="#{notice.rcenImportentNotice}" rows="10"/></td>
+                                           
+                                        </tr> 
+
+                                    </table>
+                                       </div>
+                                    <div  style="width:600px; height:260px; padding-left:0; margin: 0 auto;  border-radius: 0px 0px 4px;  margin-bottom:20px; ">
+                                        <table cellspacing="10px" style="text-align: center">
+                                        <tr   >
+                                            
+                                            <td style="background:#cc00ff; color: #ffffff; height: 40px; font-size:20px; " >Notice Serial</td>
+                                            <td style="background:#cc00ff; color: #ffffff; height: 40px; font-size:20px; " > Date</td>
+                                            <td style="background:#ffffff; color: #ffffff; height: 40px; width: 250px; font-size:20px; "><h:outputLabel value="#{notice.rightMsg}" style=" color:#006600; "/>
+                                                <h:outputLabel value="#{notice.wrmas}" style=" color:red;" />
+                                            </td>
+                                          
+                                          
+                                        </tr>
+                                        <tr>
+
+                                   
+                                            <td><h:inputText value="#{notice.id}" /></td>
+                                            <td><h:inputText value="#{notice.date}" /></td>
+                                            <td> <h:commandButton value="Submit" action="#{notice.doSave()}"/></td>
+                                           
+                                        </tr> 
+
+                                    </table>
+                                    
+                                    
+                                    </div>
+                                </h:form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <ui:include src="rightMenubarpage.xhtml"/> 
+
+        </div>
+        <ui:include src="footerPage.xhtml"/>
+
+    </h:body>
+</html>
+
+

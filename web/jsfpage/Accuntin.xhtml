@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <link href="cssStylePage/bodypage.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+
+        <ui:include src="headerPage.xhtml"/> 
+
+
+
+
+        <div style="width: 1088px; height:1090px; margin: 0 auto; background: #E1DDD9;">  
+            <div class="bodypanel_tf_a">
+                <div class="mainBody_Panel_tf_a">
+                    <div class="mb__Panel_tf_a">
+                        <div class="mb_h_tf_a">
+                            <b>TEACHERS/STUFF INFOMATION</b>
+                        </div>
+                        <div class="mb_b_tf_a">
+                            <div style="   margin:0 auto; width: 740px; height: 45px; padding-top: 5px; border: 1px solid  #cccccc;    margin-top: 15px; border-radius:5px 5px 5px ; text-align: center">
+                                <span style=" font-size:20px; font-family: fantasy; color: #999999;  ">Teachers/Stuff List</span>
+                            </div>
+                            <div style="   margin:0 auto; width: 740px; height: 45px; padding-top: 5px; border: 1px solid  #E1DDD9;   margin-top: 30px; border-radius:5px 5px 5px ; text-align: center; background: #E1DDD9;">
+                                <div style="float: left; width: 590px; height: 40px; font-size:20px; font-family: fantasy; color: #ffffff; "> Department: Accounting</div>
+
+                                <div style="float: left; width: 60px; height:40px; font-family:fantasy;  padding-top: 5px; ">
+                                    <a href="Teacher_Info.xhtml"  style="text-decoration:none; color: #9999ff;">Back</a></div>
+                            </div>
+                            <div style="   margin:0 auto; width: 740px; height:800px;  border: 1px solid  #E1DDD9;  background: #E1DDD9;   margin-top: 20px; border-radius:5px 5px 5px ;">
+
+                                <h:form>
+
+                                    <table >
+                                        
+
+                                        <tr style="background: #77cab2; font-family: fantasy; text-align: center">
+                                            <th>Id</th>
+                                            <th>Name</th>
+                                            <th>Father/Husband Name</th>
+                                            <th>Mother Name</th>
+                                            <th>Religion</th>
+                                          
+                                            <th>Blood Group</th>
+                                            <th>Designation</th>
+                                            <th>Picture</th>
+                                            
+                                        </tr>
+
+                                        <c:forEach var="row" items="#{showall.lst}">
+                                            <tr style="background: #fceded; font-family: fantasy; text-align: center">
+                                                <td><h:outputText value="#{row.id}"/></td>
+                                                <td><h:outputText value="#{row.name}"/></td>
+                                                <td><h:outputText value="#{row.forhname}"/></td>
+                                                <td><h:outputText value="#{row.mname}"/></td>
+                                                <td><h:outputText value="#{row.religeonn}"/></td>
+                                                <td><h:outputText value="#{row.bloodGroup}"/></td>
+                                                <td><h:outputText value="#{row.designation}"/></td>
+                                                <td><p:graphicImage library="teacher/" name="#{row.image}"  style=" width:60px; height:60px;"/></td>
+
+                                            </tr>
+
+                                        </c:forEach>
+
+                                    </table>
+
+                                </h:form>                       
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ui:include src="rightMenubarpage.xhtml"/> 
+
+        </div>
+        <ui:include src="footerPage.xhtml"/>
+
+    </h:body>
+</html>
+

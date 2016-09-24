@@ -1,0 +1,31 @@
+.hm_hd_p_m{
+    
+   width: 1088px;
+    height: 440px;
+    margin: 0 auto;
+    background: #E1DDD9;   
+}
+
+.latestNews{
+    width: 915px;
+    height: 30px;
+    background-color:#D3D4D5;
+    margin-top:10px;
+    float:left;
+    padding-bottom: 15px;
+    font-family:fantasy;
+        
+
+}
+.latestNewstext{
+    width: 170px;
+    height: 30px;
+    background-color:#D3D4D5;
+    margin-top:10px;
+    float:left;
+    padding-bottom: 15px;
+    font-family:fantasy;
+      
+}
+
+
